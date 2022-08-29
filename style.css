@@ -1,3 +1,56 @@
+
+/* ajout d'un titre */
+/* remplacement des textes images par des textes*/
+.remplacement_titre{
+    max-width: 613px;
+    margin: 0 auto;
+    font-size: 22px;
+}
+/*citation*/
+/* remplacement des textes images par des textes*/
+.remplacement_citation{
+    max-width: 562px;
+    color: rgb(90, 90, 90);
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 auto;
+    padding: 0;
+}
+/* auteur de la citation*/
+.remplacement_auteur{
+    color: rgb(90, 90, 90);
+    font-style: normal;
+}
+.remplacement_texte{
+    max-width: 476px;
+    font-size: 22px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+/* icones réseaux sociaux */
+figure{
+    padding-bottom: 40px;
+}
+figure .social .fa{
+  color:  rgb(80, 48, 48);
+}
+figure .social .fa:hover{
+    color: rgb(30, 30, 30)!important;
+}
+/* footer navigation */
+footer nav{
+    color:rgb(80, 48, 48);
+}
+/* footer navigation lien */
+footer nav a{
+    color:rgb(55, 55, 55)!important;
+}
+/* modification couleur H1/texte dans le header page contact */
+.access_coul{
+    color: rgb(80, 48, 48) !important;
+}
+/* fin de correction */
 body {
     margin: 0;
     padding: 0;
@@ -700,7 +753,8 @@ p {
 }
 
 .social {
-    max-width: 400px;
+    list-style: none;
+    max-width: 500px;
     margin: auto auto auto auto;
 }
 
