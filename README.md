@@ -8,7 +8,7 @@ Amélioration SEO sur un site web déja existant pour l'agence La Panthère, une
 
 Cliquez-ici [La Panthère](https://oliviafadiga.github.io/projet_4_OpenClassRoom/) pour voir le site.
 
-##Comparaison des résultats
+## Comparaison des résultats
 Cliquez-ici [Optimisation](https://docs.google.com/document/d/1DMuD-R-HMrZ-a6yXSjjDLdY3jdN8gOYGWsJsPMOyOUU/edit?usp=sharing) pour voir le rapport d'optimisation.
 Cliquez-ici [Annalyse](https://docs.google.com/spreadsheets/d/1yFWhzM1oTAvDF8vgNJFSuhXufnb4dxyHSoLQyiUF7kY/edit?usp=sharing) pour voir le rapport d'analyse.
 
