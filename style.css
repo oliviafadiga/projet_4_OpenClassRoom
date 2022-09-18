@@ -5,6 +5,7 @@
     max-width: 613px;
     margin: 0 auto;
     font-size: 22px;
+    width: 84%;
 }
 /*citation*/
 /* remplacement des textes images par des textes*/
@@ -15,7 +16,7 @@
     font-size: 20px;
     font-weight: 300;
     margin: 0 auto;
-    padding: 0;
+    padding: 30px;
 }
 /* auteur de la citation*/
 .remplacement_auteur{
@@ -28,16 +29,7 @@
     margin: 0 auto;
     padding-top: 10px;
 }
-/* icones réseaux sociaux */
-figure{
-    padding-bottom: 40px;
-}
-figure .social .fa{
-  color:  rgb(80, 48, 48);
-}
-figure .social .fa:hover{
-    color: rgb(30, 30, 30)!important;
-}
+
 /* footer navigation */
 footer nav{
     color:rgb(80, 48, 48);
@@ -46,10 +38,64 @@ footer nav{
 footer nav a{
     color:rgb(55, 55, 55)!important;
 }
-/* modification couleur H1/texte dans le header page contact */
-.access_coul{
-    color: rgb(80, 48, 48) !important;
+
+/* modification dans la page contact */
+label{
+    font-weight: bold !important;
+    display: block;
 }
+.form-group {
+    width: 100%;
+}
+.formulaire {
+    margin: auto;
+    padding-right: 0px;
+    padding-left: 140px;
+    width: 75%;
+}
+.btnform{
+    width: 100%;
+    box-shadow:1px 1px 1px #D83F3D;
+    cursor:pointer;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    background-color: #F3976D;
+    border-radius: 15px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+fieldset {
+    padding: 15px 20px 20px 20px;
+    margin-bottom:10px;
+    border:1px solid #DF3F3F;
+    border-radius: 20px;
+}
+input, textarea, select, option {
+    background-color:#FFF3F3;
+    }
+   input, textarea, select {
+    padding:3px;
+    border:1px solid #F5C5C5;
+    border-radius:5px;
+    width:300px;
+    box-shadow:1px 1px 2px #C0C0C0 inset;
+    }
+legend {
+    padding-left: 10px;
+    padding-right: 10px;
+    color:#DF3F3F;
+    font-weight:bold;
+    font-size: 20px;
+ }  
+ .renseignementContact{
+    font-size: 14px;
+    color: white;
+ }  
+
+
 /* fin de correction */
 body {
     margin: 0;
@@ -143,10 +189,6 @@ a:hover {
     right: 0;
 }
 
-.texture-paper::before {
-    background: url("img/texture-paper.png");
-    background-size: 280px 280px;
-}
 
 .b-parallax {
     background-attachment: fixed;
@@ -334,6 +376,9 @@ a:hover {
 .row.row-no-gutters > [class*=" col-"] {
     padding-right: 0;
     padding-left: 0;
+}
+.col-sm-12{
+    text-align: center;
 }
 
 #bloc-1-hero h1 {
@@ -704,12 +749,9 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #575757;
 }
 
-.container {
-    max-width: 1000px;
-}
 
 .hero-bloc-text {
     font-size: 38px;
@@ -730,7 +772,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 18px;
 }
 
 .tight-width-whitespace {
@@ -753,6 +795,8 @@ p {
 }
 
 .social {
+    gap: 50px;
+    display: inline-flex;
     list-style: none;
     max-width: 500px;
     margin: auto auto auto auto;
@@ -777,7 +821,7 @@ h3 {
 }
 
 h1 {
-    color: #333333!important;
+    color: #333333;
 }
 
 h4 {
@@ -807,7 +851,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: #052b5d61;
     padding: 40px 40px 40px 40px;
 }
 
@@ -829,47 +873,46 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFFFFF;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #FFFFFF;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+    background: #c27956;
+    color: #FFFFFF;
 }
 
 .ltc-white {
-    color: #FFFFFF!important;
+    color: #FFFFFF;
 }
 
 .ltc-white:hover {
-    color: #cccccc!important;
+    color: #cccccc;
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #F3976C;
 }
 
 .ltc-atomic-tangerine:hover {
-    color: #c27956!important;
+    color: #c27956;
 }
 
 .icon-dark-slate-blue {
-    color: #364577!important;
-    border-color: #364577!important;
+    color: #364577;
+    border-color: #364577;
 }
 
 .bg-dots-bg {
+    width: auto;
+    object-fit: cover;
     background-image: url("img/dots-bg.png");
 }
 
-.bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
-}
 
 .bg-banniere {
     background-image: url("img/agence-la-panthere.jpg");
@@ -902,13 +945,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -916,7 +959,10 @@ h4 {
 
 @media (max-width: 991px) {
     .container {
-        width: 100%;
+        width: auto;
+    }
+    .navigation{
+        width: 60%;
     }
     .b-parallax {
         background-attachment: scroll;
@@ -927,8 +973,7 @@ h4 {
         position: relative;
     }
     .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+       padding: 0 20px;
     }
     .bloc-group,
     .bloc-group .bloc {
@@ -938,12 +983,15 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+      
     }
 }
 
 @media (max-width: 767px) {
+    .formulaire {
+        padding:10px;
+        width: auto;
+    }
     .page-container {
         overflow-x: hidden;
         position: relative;
@@ -1031,6 +1079,7 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
+    
     .bloc-xxl,
     .bloc-xl,
     .bloc-lg {
